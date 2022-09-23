@@ -5,8 +5,10 @@ const fs = require('fs');
 const generateMarkdown = require('./utils/generateMarkdown.js')
 
 // Questions for user input
+// When each prompt is ran, it runs a validate method check to make sure each input is valid. 
+// See https://www.npmjs.com/package/inquirer#methods for documentation of methods used.
 const questions = [
-    // Project name
+    // Project Name
     {
         name: 'title',
         type: 'input',
@@ -66,7 +68,7 @@ const questions = [
             }
         }
     },
-    // Contribution Guidlines
+    // Contribution Guidelines
     {
         name: 'contribution',
         type: 'input',
@@ -101,7 +103,7 @@ const questions = [
         name: 'licensing',
         type: 'checkbox',
         message: 'Choose a license for your project:',
-        choices: ['Apache', 'General-Public-License (3.0)', 'MIT', 'Mozilla-Public', 'Unlicensed'],
+        choices: ['Apache (2.0)', 'General-Public-License (3.0)', 'MIT', 'Mozilla-Public (2.0)', 'Unlicensed'],
         validate: license => {
             if (license) {
                 return true;
@@ -153,5 +155,5 @@ function init() {
     });
 };
 
-// Function call to initialize app
+// Initialize app
 init();
