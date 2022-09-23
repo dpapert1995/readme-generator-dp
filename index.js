@@ -14,7 +14,8 @@ const questions = [
         validate: userTitle => {
             if (userTitle) {
                 return true;
-            } else {
+            } 
+            else {
                 console.log('Please enter a title to continue:');
                 return false;
             }
@@ -28,7 +29,8 @@ const questions = [
         validate: userDescription => {
             if (userDescription) {
                 return true;
-            } else {
+            } 
+            else {
                 console.log('Please enter a description to continue:');
                 return false;
             }
@@ -42,7 +44,8 @@ const questions = [
         validate: installationInstructions => {
             if (installationInstructions) {
                 return true;
-            } else {
+            } 
+            else {
                 console.log('Please enter installation instructions to continue:');
                 return false;
             }
@@ -56,7 +59,8 @@ const questions = [
         validate: userUsage => {
             if (userUsage) {
                 return true;
-            } else {
+            } 
+            else {
                 console.log('Please enter purpose/ usage to continue:');
                 return false;
             }
@@ -70,7 +74,8 @@ const questions = [
         validate: contributionGuidelines => {
             if (contributionGuidelines) {
                 return true;
-            } else {
+            } 
+            else {
                 console.log('Please enter contribution instructions to continue:');
                 return false;
             }
@@ -84,7 +89,8 @@ const questions = [
         validate: tests => {
             if (tests) {
                 return true;
-            } else {
+            } 
+            else {
                 console.log('Please enter test instructions to continue:');
                 return false;
             }
@@ -94,12 +100,13 @@ const questions = [
     {
         name: 'licensing',
         type: 'checkbox',
-        message: 'Choose a license for your project (Required)',
-        choices: ['Apache', 'Common-Development-and-Distribution', 'General-Public-License', 'MIT', 'Mozilla-Public', 'Unlicensed'],
+        message: 'Choose a license for your project:',
+        choices: ['Apache', 'General-Public-License (3.0)', 'MIT', 'Mozilla-Public', 'Unlicensed'],
         validate: license => {
             if (license) {
                 return true;
-            } else {
+            } 
+            else {
                 console.log('You must pick a license for the project!');
                 return false;
             }
@@ -113,7 +120,8 @@ const questions = [
         validate: userGithub => {
             if (userGithub) {
                 return true;
-            } else {
+            } 
+            else {
                 console.log('Please enter your GitHub username!');
                 return false;
             }
@@ -127,7 +135,7 @@ const questions = [
     },
 ];
 
-// TODO: Create a function to write README file
+// Writes README.md file
 function writeToFile(fileName, data) {
     fs.writeFile(fileName, data, error => {
     if (error) {
@@ -136,12 +144,12 @@ function writeToFile(fileName, data) {
   })
 };
 
-// TODO: Create a function to initialize app
+// Function to initialize app when "node index.js" is invoked on the command line
 function init() {
     inquirer.prompt(questions)
     .then(function (inputs) {
         console.log(inputs)
-        writeToFile("README1.md", generateMarkdown(inputs));
+        writeToFile("README_Sample.md", generateMarkdown(inputs));
     });
 };
 
