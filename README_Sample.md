@@ -1,7 +1,7 @@
-# Sample Title
+# Sample Project
 
   ## Licensing:
-  [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+  
   ## Table of Contents 
   - [Description](#description)
   - [Installation](#installation)
@@ -10,31 +10,17 @@
   - [Testing](#testing)
   - [Questions](#questions)
   ## Description:
-<<<<<<< HEAD
-  Sample description
+  This 
   ## Installation:
-  Sample installation instructions
+  is
   ## Usage:
-  Sample usage
+  to
   ## License:
-  This is Licensed under the MIT License. Copyright 2022.
+  This is Licensed under the  License. Copyright 2022.
   ## Contribution:
-  Sample contribution instructions
+  test
   ## Testing:
-  Sample test instructions
-=======
-  This is a project description
-  ## Installation:
-  These are installation instructions
-  ## Usage:
-  This is the purpose
-  ## License:
-  This is Licensed under the MIT License. Copyright 2022.
-  ## Contribution:
-  This is the contribution
-  ## Testing:
-  This is the test instructions
->>>>>>> 63a1d66b38f07d662d72559fc6081e796213bd01
+  for
   ## Questions:
-  - Github: [dpapert1995](https://github.com/dpapert1995)
+  - Github: [overwrite](https://github.com/overwrite)
   - Email: dpapert@gmail.com
