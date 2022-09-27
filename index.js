@@ -150,7 +150,6 @@ function writeToFile(fileName, markDown) {
 function init() {
     inquirer.prompt(questions)
     .then(function (inputs) {
-        console.log(inputs)
         writeToFile("README_Sample.md", generateMarkdown(inputs));
     });
 };
